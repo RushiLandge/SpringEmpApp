@@ -20,7 +20,7 @@ public class EmpService {
     public List<Employee> getAllEmp(){
     	return repo.findAll();  
     	}
-    public Employee getEmpyId(int id) {
+    public Employee getEmpbyId(int id) {
     	Optional <Employee> e=repo.findById(id);
     	if(e.isPresent()) {
     		return e.get();

@@ -38,7 +38,7 @@ public class EmpController {
 	
 	@GetMapping("/edit/{id}")
 	public String edit(@PathVariable int id, Model m) {
-		Employee e = service.getEmpyId(id);
+		Employee e = service.getEmpbyId(id);
 		m.addAttribute("emp", e);
 		return "edit";
 	}
